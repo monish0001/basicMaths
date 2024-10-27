@@ -81,3 +81,22 @@ int findGCD(int arr[], int n)
 }
 
 //Time Complexity: O(N * log(N)), where N is the largest element of the array
+
+
+cout << "gcd(6, 20) = " << __gcd(6, 20) << endl; // gcd(6,20) for C++17
+
+Time Complexity: O(logn)
+Auxiliary Space: O(1)
+
+
+
+vector<int> numbers = { 12, 15, 18, 21, 24 };
+    int ans =__gcd(numbers[0], numbers[1]);
+    for (int i = 2; i < numbers.size(); i++)
+    {
+        ans = __gcd(ans, numbers[i]);
+    }
+    cout << "The GCD of the numbers in the vector is: " <<ans<<endl;
+
+Time Complexity: O(k*logn)
+Auxiliary Space: O(k)
